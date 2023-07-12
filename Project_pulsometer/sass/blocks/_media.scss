@@ -1,0 +1,174 @@
+@media (max-width: 1200) {
+  .header {
+    margin: 0 45px;
+  }
+  .promo {
+    &__wrapper {
+      margin-right: 45px;
+    }
+    &__header {
+      font-size: 40px;
+    }
+    &__subheader {
+      font-size: 22px;
+    }
+  }
+  .advantages {
+    &__items {
+      margin: 0 45px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    margin: 0 45px;
+  }
+  .promo {
+    &__wrapper {
+      margin-right: 45px;
+    }
+    &__header {
+      font-size: 38px;
+    }
+    &__subheader {
+      font-size: 20px;
+    }
+  }
+  .advantages {
+    &__items {
+      margin: 0 45px;
+    }
+  }
+  .title {
+    margin-left: 30px;
+  }
+  .consultation {
+    &__descr {
+      margin-left: 30px;
+    }
+  }
+  .call-form {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    margin: 0 45px;
+    &__logo {
+      width: 200px;
+    }
+    &__official {
+      font-size: 10px;
+      span {
+        font-size: 16px;
+      }
+    }
+    &__phone {
+      font-size: 16px;
+    }
+  }
+  .promo {
+    &__wrapper {
+      margin-right: 45px;
+    }
+    &__header {
+      font-size: 36px;
+    }
+    &__subheader {
+      font-size: 18px;
+    }
+  }
+  .advantages {
+    &__items {
+      margin: 65px 45px 0 45px;
+    }
+    &__item {
+      max-width: 190px;
+    }
+    &__icon {
+      width: 60px;
+      height: 60px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+    &__text {
+      font-size: 11px;
+    }
+  }
+  .title {
+    font-size: 25px;
+  }
+
+  .consultation {
+    padding: 80px 0 75px 0;
+    &__descr {
+      margin-top: 60px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    margin: 0 45px;
+    &__official {
+      span {
+        font-size: 12px;
+      }
+    }
+    &__phone {
+      font-size: 14px;
+    }
+  }
+  .promo {
+    &__wrapper {
+      margin-right: 45px;
+      margin-top: 50px;
+    }
+    &__header {
+      font-size: 34px;
+    }
+    &__subheader {
+      font-size: 16px;
+    }
+    &__icons {
+      margin-top: 30px;
+    }
+    &__icon {
+      width: 100px;
+      height: 100px;
+      font-size: 13px;
+    }
+  }
+  .advantages {
+    &__items {
+      margin: 65px 45px 0 45px;
+    }
+    &__item {
+      max-width: 150px;
+    }
+    &__subtitle {
+      font-size: 13px;
+    }
+    &__text {
+      font-size: 10px;
+    }
+  }
+  .button {
+    &_main {
+      width: 250px;
+      height: 45px;
+    }
+  }
+  .consultation {
+    padding: 60px 0 55px 0;
+    &__descr {
+      margin-top: 35px;
+    }
+  }
+  .call-form {
+    width: 250px;
+    input {
+      height: 40px;
+    }
+  }
+}
