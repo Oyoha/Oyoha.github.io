@@ -7,6 +7,7 @@ a {
 }
 
 .container {
+  position: relative;
   max-width: 950px;
   margin: 0 auto;
 }
@@ -223,8 +224,8 @@ a {
   width: 750px;
   margin: 0 auto;
 }
-.carousel .slick-prev,
-.carousel .slick-next {
+.carousel .prev,
+.carousel .next {
   border: none;
   position: absolute;
   top: 50%;
@@ -232,14 +233,18 @@ a {
   left: -66px;
   background-color: #fff;
 }
-.carousel .slick-prev img,
-.carousel .slick-next img {
+.carousel .prev img,
+.carousel .next img {
   height: 50px;
   width: 31px;
 }
-.carousel .slick-next {
+.carousel .next {
   left: auto;
   right: -66px;
+}
+.carousel .tns-item img {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 1200) {
