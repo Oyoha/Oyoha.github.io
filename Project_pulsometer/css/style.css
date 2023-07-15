@@ -343,7 +343,6 @@ a {
 }
 .catalog-item hr {
   margin-top: 19px;
-  background-color: #e8e8e8;
   margin-bottom: 21px;
 }
 .catalog-item__footer {
@@ -425,6 +424,53 @@ a {
 }
 .catalog-item__back:hover {
   color: #c70101;
+}
+
+.review__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.review__item {
+  display: flex;
+}
+.review__img {
+  width: 169px;
+  height: 169px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+.review__descr {
+  margin-left: 62px;
+  padding-right: 60px;
+}
+.review__name {
+  color: #0d0d0d;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.review__num {
+  color: #646464;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.review__text {
+  color: #0d0d0d;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+}
+.review hr {
+  margin: 50px 0;
+  width: 940px;
+  height: 1px;
 }
 
 @media (max-width: 1200) {
