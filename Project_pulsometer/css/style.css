@@ -469,6 +469,10 @@ a {
   .call-form {
     margin-left: 30px;
   }
+  .carousel .prev,
+  .carousel .next {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .header {
