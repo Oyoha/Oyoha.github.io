@@ -197,6 +197,15 @@ a {
   font-weight: 500;
   text-align: left;
 }
+.consultation .error {
+  border: 1px solid #c70101;
+}
+.consultation label.error {
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
 
 .call-form {
   margin-top: 36px;
@@ -577,6 +586,14 @@ a {
 }
 .modal_mini {
   min-height: 140px;
+}
+.modal .error {
+  border: 1px solid #c70101;
+}
+.modal label.error {
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #consultation,
