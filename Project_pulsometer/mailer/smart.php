@@ -14,12 +14,12 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'vasal30000@mail.ru';                 // Наш логин
-$mail->Password = 's0A5VmCctN7qWqLTf751';                           // Наш пароль от ящика
+$mail->Password = 'zn8qanQNmGzv9arsH6CB';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('vasal30000@mail.ru', 'Pulse');   // От кого письмо 
-$mail->addAddress('vasal300@mail.ru', 'vasal3000@mail.ru');     // Add a recipient
+$mail->addAddress('vasal300@mail.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
