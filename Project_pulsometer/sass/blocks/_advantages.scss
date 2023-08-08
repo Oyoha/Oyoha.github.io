@@ -35,4 +35,15 @@
       text-decoration: underline;
     }
   }
+  &__icon {
+    &_animated {
+      // animation-name: heartbeat;
+      // animation-duration: 2s;
+      //как по скорости будет проигрываться анимация
+      // animation-timing-function: linear;
+      //сколько раз будет проигрываться анимация
+      // animation-iteration-count: infinite;
+      animation: heartbeat 2s linear infinite;
+    }
+  }
 }

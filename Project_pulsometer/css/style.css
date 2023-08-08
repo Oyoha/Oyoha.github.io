@@ -1,3 +1,20 @@
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.3);
+  }
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
 }
@@ -170,6 +187,9 @@ a {
 .advantages__text a {
   color: #ff0000;
   text-decoration: underline;
+}
+.advantages__icon_animated {
+  animation: heartbeat 2s linear infinite;
 }
 
 .title {
