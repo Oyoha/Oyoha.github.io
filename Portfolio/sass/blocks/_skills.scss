@@ -1,0 +1,100 @@
+.skills {
+  padding-top: 137px;
+  &__title {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &:before {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__wrapper {
+    padding: 60px 10px 0 10px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(270px, auto));
+    grid-template-rows: repeat(2, minmax(270px, auto));
+    grid-auto-rows: minmax(270px, auto);
+    gap: 13px;
+  }
+  &__item {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    border: 1px solid #000;
+    background: rgba(196, 196, 196, 0);
+    &-img {
+      margin: 30px 0 0 30px;
+    }
+    &-name {
+      margin: 20px 0 0 30px;
+    }
+    &-descr {
+      margin: 15px 29px 25px 30px;
+      font-size: 12px;
+      line-height: 19px;
+    }
+  }
+  .jq {
+    .skills__item-img {
+      margin: 45px 0 0 30px;
+    }
+    .skills__item-name {
+      margin: 33px 0 0 30px;
+    }
+  }
+  .mongo {
+    .skills__item-img {
+      margin: 38px 0 0 30px;
+    }
+    .skills__item-name {
+      margin: 32px 0 0 30px;
+    }
+  }
+  &__percentage {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 70px);
+    grid-auto-rows: 70px;
+    column-gap: 45px;
+    row-gap: 30px;
+  }
+}
+
+.percentage__item {
+  position: relative;
+  &-head {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    @include before_circle;
+    &:before {
+      left: -12px;
+    }
+  }
+  &-number {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+  }
+  &-dividerback {
+    position: absolute;
+    bottom: 0;
+    width: 350px;
+    height: 14px;
+    border-radius: 4px;
+    background: #e8e4de;
+  }
+  &-dividerfront {
+    position: absolute;
+    bottom: 0;
+    height: 14px;
+    border-radius: 4px;
+    background: $main-color;
+  }
+}

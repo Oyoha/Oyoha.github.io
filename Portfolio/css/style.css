@@ -716,3 +716,121 @@ template {
   font-size: 12px;
   line-height: 18px;
 }
+
+.skills {
+  padding-top: 137px;
+}
+.skills__title {
+  position: relative;
+  text-align: center;
+}
+.skills__title:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  background: #ffa501;
+}
+.skills__title:before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.skills__subtitle {
+  text-align: center;
+}
+.skills__wrapper {
+  padding: 60px 10px 0 10px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(270px, auto));
+  grid-template-rows: repeat(2, minmax(270px, auto));
+  grid-auto-rows: minmax(270px, auto);
+  gap: 13px;
+}
+.skills__item {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  border: 1px solid #000;
+  background: rgba(196, 196, 196, 0);
+}
+.skills__item-img {
+  margin: 30px 0 0 30px;
+}
+.skills__item-name {
+  margin: 20px 0 0 30px;
+}
+.skills__item-descr {
+  margin: 15px 29px 25px 30px;
+  font-size: 12px;
+  line-height: 19px;
+}
+.skills .jq .skills__item-img {
+  margin: 45px 0 0 30px;
+}
+.skills .jq .skills__item-name {
+  margin: 33px 0 0 30px;
+}
+.skills .mongo .skills__item-img {
+  margin: 38px 0 0 30px;
+}
+.skills .mongo .skills__item-name {
+  margin: 32px 0 0 30px;
+}
+.skills__percentage {
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 70px);
+  grid-auto-rows: 70px;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
+  row-gap: 30px;
+}
+
+.percentage__item {
+  position: relative;
+}
+.percentage__item-head {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+}
+.percentage__item-head:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  background: #ffa501;
+}
+.percentage__item-head:before {
+  left: -12px;
+}
+.percentage__item-number {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+}
+.percentage__item-dividerback {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+  height: 14px;
+  border-radius: 4px;
+  background: #e8e4de;
+}
+.percentage__item-dividerfront {
+  position: absolute;
+  bottom: 0;
+  height: 14px;
+  border-radius: 4px;
+  background: #ffa501;
+}

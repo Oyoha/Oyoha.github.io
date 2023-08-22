@@ -9,3 +9,10 @@ hamburger.addEventListener("click", () => {
 closeElem.addEventListener("click", () => {
   menu.classList.remove("active");
 });
+
+const percentage = document.querySelectorAll(".percentage__item-number"),
+  lines = document.querySelectorAll(".percentage__item-dividerfront");
+
+percentage.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});
