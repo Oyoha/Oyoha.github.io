@@ -839,3 +839,45 @@ template {
 .portfolio__item:hover {
   transform: scale(1.05);
 }
+
+.price {
+  padding-top: 60px;
+}
+.price__wrapper {
+  padding: 60px 50px 0 50px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(365px, auto));
+  grid-template-rows: repeat(3, minmax(44px, auto));
+  grid-auto-rows: minmax(44px, auto);
+  justify-content: space-between;
+  row-gap: 15px;
+}
+.price__item {
+  position: relative;
+  display: grid;
+  grid-template: repeat(2, minmax(21px, auto))/repeat(2, auto);
+  row-gap: 5px;
+  padding-left: 25px;
+}
+.price__item:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #ffa501;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+}
+.price__item-name, .price__item-num {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.price__item-num {
+  justify-self: end;
+}
+.price__item-descr {
+  grid-row: 2/3;
+  font-size: 12px;
+  line-height: 18px;
+}
