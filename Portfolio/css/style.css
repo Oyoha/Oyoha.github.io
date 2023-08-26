@@ -743,7 +743,7 @@ template {
 }
 .skills__item {
   position: relative;
-  width: 270px;
+  width: 100%;
   height: 270px;
   border: 1px solid #000;
   background: rgba(196, 196, 196, 0);
@@ -812,7 +812,7 @@ template {
 .percentage__item-dividerback {
   position: absolute;
   bottom: 0;
-  width: 350px;
+  width: 100%;
   height: 14px;
   border-radius: 4px;
   background: #e8e4de;
@@ -1001,4 +1001,204 @@ template {
 
 .policy {
   padding: 50px 50px 25px 25px;
+}
+
+@media (max-width: 1439px) {
+  .sidepanel {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .about__wrapper {
+    grid-template-columns: 400px 520px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .about__skills {
+    grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .about__skills-item {
+    grid-template-columns: 40px 195px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  .resume {
+    padding-top: 80px;
+  }
+  .resume__wrapper {
+    grid-template-columns: repeat(2, 375px);
+  }
+  .skills {
+    padding-top: 100px;
+  }
+  .skills__wrapper {
+    grid-template-columns: repeat(4, minmax(230px, auto));
+    gap: 10px;
+  }
+  .skills__item-descr {
+    margin: 15px 20px 20px 20px;
+  }
+  .skills__percentage {
+    padding-top: 90px;
+    grid-template-columns: repeat(3, 290px);
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .title_fz36 {
+    font-size: 30px;
+  }
+  .about__wrapper {
+    grid-template-columns: 300px 380px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .about__skills {
+    grid-template-columns: 380px;
+    grid-auto-rows: minmax(115px, auto);
+  }
+  .about__skills-item {
+    grid-template-columns: 40px 320px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .resume__wrapper {
+    padding: 40px 65px 0 0;
+    grid-template-columns: repeat(2, 310px);
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+  .resume__item-diploma {
+    font-size: 11px;
+  }
+  .skills {
+    padding-top: 90px;
+  }
+  .skills__wrapper {
+    grid-template-columns: repeat(3, 230px);
+    gap: 10px;
+  }
+  .skills__percentage {
+    padding-top: 65px;
+    grid-template-columns: repeat(2, 340px);
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .title_fz48 {
+    font-size: 28px;
+  }
+  .promo__title {
+    width: 300px;
+    line-height: 39px;
+  }
+  .about {
+    padding-top: 40px;
+  }
+  .about__wrapper {
+    grid-template: 400px auto auto/1fr;
+  }
+  .about__photo {
+    grid-row: unset;
+  }
+  .about__skills {
+    grid-template-columns: repeat(2, 260px);
+  }
+  .about__skills-item {
+    grid-template-columns: 40px 200px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .resume {
+    padding-top: 65px;
+  }
+  .resume__wrapper {
+    grid-template-columns: repeat(2, 245px);
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .skills {
+    padding-top: 70px;
+  }
+  .skills__wrapper {
+    padding: 40px 5px 0 5px;
+    grid-template-columns: repeat(2, 265px);
+    gap: 10px;
+  }
+  .skills__percentage {
+    padding-top: 65px;
+    grid-template-columns: repeat(2, 255px);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .title_fz36 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .title_fz48 {
+    font-size: 26px;
+  }
+  .title__section-subtitle {
+    padding-top: 20px;
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .menu__block {
+    width: 250px;
+    padding-left: 20px;
+  }
+  .promo {
+    background: url("../img/Background.jpg") no-repeat 57%/cover;
+  }
+  .promo__btns {
+    margin-top: 30px;
+  }
+  .about__wrapper {
+    grid-template: 340px auto auto/1fr;
+  }
+  .about__skills {
+    grid-template-columns: 1fr;
+  }
+  .resume {
+    padding-top: 40px;
+  }
+  .resume__wrapper {
+    grid-template-columns: 292px;
+    grid-auto-rows: minmax(173px, auto);
+    row-gap: 40px;
+  }
+  .skills {
+    padding-top: 40px;
+    position: relative;
+  }
+  .skills__wrapper {
+    padding: 20px 15px 0 15px;
+    grid-template-columns: repeat(1, 270px);
+    row-gap: 20px;
+    justify-content: center;
+  }
+  .skills__percentage {
+    padding-top: 40px;
+    grid-template-columns: repeat(1, 300px);
+    row-gap: 40px;
+    justify-content: center;
+  }
 }
